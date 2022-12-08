@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="32dp"
+    android:layout_marginTop="64dp"
+    android:paddingHorizontal="32dp"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/item_atv_txt_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Adicionar um item"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/item_atv_input_layout_item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_atv_txt_login">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/item_atv_input_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do item" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/item_atv_input_layout_item_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_atv_input_layout_item_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/item_atv_input_item_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Preço do item (R$)"
+            android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/item_atv_input_layout_item_consumption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_atv_input_layout_item_price">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/item_atv_input_item_consumption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Consumo de energia (kWh)"
+            android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/item_atv_btn_add_item"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:paddingVertical="18dp"
+        android:text="Adicionar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_atv_input_layout_item_consumption" />
+
+    <Button
+        android:id="@+id/item_atv_nav_btn_home_page"
+        style="@style/BottomBarButton"
+        app:icon="@drawable/ic_home"
+        app:iconSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/item_atv_nav_btn_add_item"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/item_atv_nav_btn_add_item" />
+
+    <Button
+        android:id="@+id/item_atv_nav_btn_add_item"
+        style="@style/BottomBarButton"
+        android:layout_marginBottom="16dp"
+        android:enabled="false"
+        app:icon="@drawable/ic_add_box"
+        app:iconSize="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/item_atv_nav_btn_logoff"
+        app:layout_constraintStart_toEndOf="@+id/item_atv_nav_btn_home_page" />
+
+    <Button
+        android:id="@+id/item_atv_nav_btn_logoff"
+        style="@style/BottomBarButton"
+        app:icon="@drawable/ic_logout"
+        app:iconSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/item_atv_nav_btn_add_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/item_atv_nav_btn_add_item" />
+</androidx.constraintlayout.widget.ConstraintLayout>
