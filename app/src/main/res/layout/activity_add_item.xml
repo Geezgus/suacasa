@@ -77,6 +77,7 @@
         android:layout_marginTop="32dp"
         android:paddingVertical="18dp"
         android:text="Adicionar"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/item_atv_input_layout_item_consumption" />

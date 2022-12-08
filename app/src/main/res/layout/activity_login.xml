@@ -86,13 +86,14 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            style="@style/Widget.Material3.Button.ElevatedButton"
             android:id="@+id/login_atv_btn_login"
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="32dp"
             android:paddingVertical="18dp"
             android:text="Entrar"
+            android:textSize="18sp"
             app:layout_constraintBottom_toTopOf="@+id/login_atv_link_go_reset_password"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />

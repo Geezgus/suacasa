@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "842264798531",
+    "project_id": "suacasafirebase",
+    "storage_bucket": "suacasafirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:842264798531:android:23163014cef86943ea3bf6",
+        "android_client_info": {
+          "package_name": "com.github.geezgus.suacasa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "842264798531-0hmte9l2l8aclbtephgbo83hcvusr693.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZci8fuzoMgSyuFsH_1MZhRh88jnRH-4Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "842264798531-0hmte9l2l8aclbtephgbo83hcvusr693.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

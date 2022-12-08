@@ -7,9 +7,8 @@ class Navigation {
     class Activity {
         companion object {
             fun homePage(context: Context) {
-                context.startActivity(
-                    Intent(context, HomePageActivity::class.java)
-                )
+                val intent = Intent(context, HomePageActivity::class.java)
+                context.startActivity(intent)
             }
 
             fun login(context: Context) {
